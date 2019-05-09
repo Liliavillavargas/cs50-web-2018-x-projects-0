@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Website Lilia Villa</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+      <!-- Menú de navegación del sitio -->
+      <ul class="navbar">
+        <li><a href="Home.html">Home</a>
+        <li><a href="Habilidades.html">Habilidades</a>
+        <li><a href="Proyectos.html">Proyectos</a>
+        <li><a href="Galeria.html">Galeria</a>
+      </ul>
+
+      <h1>HABILIDADES Y DESTREZAS</h1>
+
+      <ol>
+        <li>Desarrollo de Software. Basic, Cobol, C++, con conocimientos en DBase, Borlan Delphi, Php, Oracle, Sql. Criptografia, HTML y CSS, Algoritmos.</li>
+        <li>Administración de Bases de Datos. MySql, Fox Pro, Dbase, Linux, Access. Mayorizacion, Importación y Exportación de información. Generación y Cargue de Interfaz.</li>
+        <li>Microsoft Word, Excel, Power Point, Movie Maker. Scratch, Go Animate, entre otros. Diseño Web.</li>
+        <li>Transmisiones de Movimientos. Operación de Redes Informáticas.</li>
+        <li>Creación y Manejo de Plan de Cuentas. Facturación.</li>
+        <li>MS_DOS, Linux. Maquinas Virtuales,Github and Git</li>
+        <li>Creatividad Morfológica.</li>
+        <li>Cálculos Matemáticos - Financieros.</li>
+
+
+      </ol>
+
+
+    </body>
+</html>
