@@ -1,35 +1,125 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Website Lilia Villa</title>
-        <link rel="stylesheet" href="estylo.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-        <h1><br><br>LILIA DEL CARMEN VILLA VARGAS</h1><br><br>
-    </head>
-    <body>
-      <!-- Menú de navegación del sitio -->
-      <ul class="navbar">
-        <li><a href="Home.html">Home</a>
-        <li><a href="Habilidades.html">Habilidades</a>
-        <li><a href="Proyectos.html">Proyectos</a>
-        <li><a href="Galeria.html">Galeria</a>
-      </ul>
+  <head>
+       <meta charset="UTF-8">
+      <!-- Nombre Website, definicion estilos -->
+       <title>Website Lilia Villa</title>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <header>
+            <h1><br><br>Lilia Villa Vargas<br><br><br><br></h1>
+            <link rel="stylesheet" href="estylo.css">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+        <style>
+
+          ol::first-line {
+            background-color: tomato;
+          }
+          /* Color fondo*/
+            body{
+              background-color: #f9fbd0;
+            }
+
+           @import "compass/css3";
+
+          .flex-container {
+              padding: 0;
+              margin: 0;
+              list-style: none;
+
+              display: -webkit-box;
+              display: -moz-box;
+              display: -ms-flexbox;
+              display: -webkit-flex;
+              display: flex;
+
+              -webkit-flex-flow: row wrap;
+              justify-content: space-around;
+            }
+
+              .flex-item {
+                    background: tomato;
+                    padding: 5px;
+                    width: 200px;
+                    height: 150px;
+                    margin-top: 10px;
+
+                    line-height: 150px;
+                    color: white;
+                    font-weight: normal;
+                    font-size: 1em;
+                    text-align: center;
+                  }
+
+
+        </style>
+
+        <!--Navegacion del sitio, definicion estilos -->
+        <nav>
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+             </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+               <a class="navbar-brand" href="Home.html">Home</a>
+                  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="Habilidades.html">Habilidades <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Proyectos.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Galeria.html">Galeria</a>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+            </div>
+          </nav>
+
+
+        </nav>
+        </header>
+
+  </head>
+
+  <body>
+
+
+      <!-- Lista Ordenada -->
       <h2>HABILIDADES Y DESTREZAS</h2>
 
       <ol>
-        <li>Desarrollo de Software. Basic, Cobol, C++, con conocimientos en DBase, Borlan Delphi, Php, Oracle, Sql. Criptografia, HTML y CSS, Algoritmos.</li>
-        <li>Administración de Bases de Datos. MySql, Fox Pro, Dbase, Linux, Access. Mayorizacion, Importación y Exportación de información. Generación y Cargue de Interfaz.</li>
-        <li>Microsoft Word, Excel, Power Point, Movie Maker. Scratch, Go Animate, entre otros. Diseño Web.</li>
-        <li>Transmisiones de Movimientos. Operación de Redes Informáticas.</li>
+        <li>Desarrollo de Software.</li>
+        <li>Administración de Bases de Datos.</li>
+        <li>Software Administrativo</li>
+        <li>Transmisiones de Movimientos.</li>
         <li>Creación y Manejo de Plan de Cuentas. Facturación.</li>
         <li>MS_DOS, Linux. Maquinas Virtuales,Github and Git</li>
         <li>Creatividad Morfológica.</li>
         <li>Cálculos Matemáticos - Financieros.</li>
 
-
       </ol>
 
+      <ul class="flex-container">
+        <li class="flex-item">1.-Php, Oracle,Sql,</li>
+        <li class="flex-item">2.-HTML,CSS,SCSS,Linux</li>
+        <li class="flex-item">3.-Redes Informaticas</li>
+        <li class="flex-item">4.-Contabilidad Especiales</li>
+        <li class="flex-item">5.-Maquinas Virtuales</li>
+        <li class="flex-item">6.-Scratch,MS-DOS,C++</li>
+        <li class="flex-item">7.-Maquinas Virtuales</li>
 
-    </body>
+      </ul>
+
+      <div class="alert alert-primary" role="alert">
+        Well Done !!! <a href="#" class="alert-link">Come Back</a>. Give it a click if you like.
+      </div>
+
+  </body>
+
+</html>
