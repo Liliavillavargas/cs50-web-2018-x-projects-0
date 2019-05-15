@@ -1,51 +1,86 @@
-  h1 {
-padding-left: 1em;
-font-family: Georgia, "Times New Roman",
-      Times, serif;
-color: white;
-text-align: center;
-background-color:#000080
-}
-ul.navbar {
-  list-style-type: none;
-  padding: 0.3em;
-  margin: 0.3em;
-  top: 0em;
-  left: 0em;
-  width: 0em }
+  .success, .warning, .error {
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  border: 1px solid black;
+  padding: 20px;
+  margin: 20px; }
 
-ul.navbar li {
-  background: white ;
-  margin: 0em;
-  padding: 0em;
-  border-right: 2em solid white }
-ul.navbar a {
-  text-decoration: none }
+.success {
+  background-color: green; }
+
+.warning {
+  background-color: orange; }
+
+.error {
+  background-color: red; }
+
+/*# sourceMappingURL=inheritance.css.map */
+ul{
+padding-left:0;
+}
+body > header{
+background: #000080;
+color : white;
+}
 a:link {
-  color: blue }
+  color: blue;}
+
 a:visited {
-  color: purple }
+
+  color: purple; }
+
 address {
   padding-top: 1em;
-  border-top:  dotted }
+  border-top:  dotted; }
+
+h1 {
+  text-align: center;
+}
 h2 {
   padding-left: 1em;
-  font-family: Georgia, "Times New Roman",
-        Times, serif;
-  color: purple;
+  font-family: Helvetica, Arial;
+  color: red;
   background-color:lightgray;
-  text-align: center}
+  text-align: center;}
+
 body {
   padding-left: 2.5em;
   padding-right: 5em;
   font-family: Georgia, "Times New Roman",
         Times, serif;
-  color: purple }
+  color: purple;
+
+  }
+
  p {
-    color: gray;
-    text-align:justify;
-    .em-wide  { letter-spacing: 25em; }
-    font-family: Helvetica, Arial, sans-serif;
-    line-height: 1.7
-    #Primer {
-    word-spacing: 200px; }
+  color: gray;
+  text-align:justify;
+  .em-wide  { letter-spacing: 25em; }
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.7
+
+  #Primer {
+  word-spacing: 200px; }
+
+  h2::after {
+    content: "PROYECTOS REALIZADOS";
+    text-align: center;
+}
+  p::first-line
+  The first line of all <p> elements.
+
+  div > p
+  All <p> elements where the parent is a <div> element.
+
+  ::selection {
+  All elements;
+}
+
+/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+  @media only screen and (max-width: 499px) {
+  div.header {
+    font-size: 5px;
+    color: white;
+    }
+}
