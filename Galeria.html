@@ -1,31 +1,114 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Website Lilia Villa</title>
-        <link rel="stylesheet" href="style.css">
-    <style>
-    #firstname {
-       background-color: white;
-       }
-    .center {
-      text-align: center;
-      color: red;
-    }
-    </style>
-    </head>
-    <body>
-      <!-- Menú de navegación del sitio -->
-      <ul class="navbar">
-        <li><a href="Home.html">Home</a>
-        <li><a href="Habilidades.html">Habilidades</a>
-        <li><a href="Proyectos.html">Proyectos</a>
-        <li><a href="Galeria.html">Galeria</a>
-      </ul>
 
-      <h1 class="center"> Gracias un beso grande por todo lo que haces</h1>
-      <img alt="imagen de besitos"src =" images.jpg"/>
+<html>
+
+    <head>
+      <meta charset="UTF-8">
+
+  <!-- Nombre Website, definicion estilos -->
+      <title>WebPage Lilia Villa</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Diseño encabezado, definicion estilos -->
+      <header>
+        <h1><br><br>Lilia Villa Vargas<br><br><br><br></h1>
+        <link rel="stylesheet" href="estylo.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+        <style>
+
+        /* Color fondo*/
+          body{
+            background-color: #f9fbd0;
+          }
+        div.gallery {
+          margin: 5px;
+          border: 1px solid #ccc;
+          float: left;
+          width: 180px;
+          }
+
+          div.gallery:hover {
+            border: 1px solid #777;
+          }
+
+          div.gallery img {
+            width: 100%;
+            height: auto;
+          }
+
+          div.desc {
+            padding: 15px;
+            text-align: center;
+          }
+
+          div > p {
+                border: 5px dotted orange;
+                }
+
+            #firstname {
+                background-color: #d7c0a7;
+                font-size: 38px;
+                text-align: center;
+                }
+            .center {
+                text-align: center;
+                color: red;
+                }
+
+        </style>
+
+        <nav>
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse">
+            <a class="navbar-brand" href="Home.html">Home</a>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" href="Habilidades.html">Habilidades <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Proyectos.html">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Galeria.html">Galeria</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+
+
+        </nav>
+      </header>
+
+    </head>
+
+    <body>
+
+      <!-- Contenido Pagina Imagen y Texto -->
+      <h3 class="center"> Gracias un beso grande por todo lo que haces</h3>
+        <center>
+          <img class="foto1" src="imagen1.jpg" alt="imagen 1">
+
+          <img class="foto2" alt="imagengirasol" src="images.jpg">
+          <img class="foto3" alt="codigobinario" src="codigobinario.jpg" width=200px height=200px>
+       </center>
       <div class="intro">
-        <p id="firstname">David J. Malan, MUAKISSES.</p>
+        <p id="firstname"><br><br>David J. Malan. MUAKISSES<br><br><br></p>
       </div>
+
+      <div>
+        <h4>My name is Lilia Villa</h4>
+        <p class="center">I live in Monteria, Cordoba, Colombia.</p>
+      </div>
+
+
     </body>
+
 </html>
