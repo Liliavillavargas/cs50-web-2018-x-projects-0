@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+      <!--Specify the character encoding for the HTML document-->
+      <meta charset="UTF-8">
+
+  <!-- Nombre Website, definicion estilos -->
+      <title>WebPage Lilia Villa</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Diseño encabezado, definicion estilos -->
+      <header>
+        <h1><br><br>Lilia del Carmen Villa Vargas<br><br><br><br></h1>
+        <link rel="stylesheet" href="estylo.css">
+        <link rel="stylesheet" href="caja.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+        <style>
+        div > p {
+            text-align: center;
+            font-family: cursive;
+            font-style: oblique;
+            font-size: 35px;
+            border: 25px dotted  red;
+            background-color: yellow;
+            }
+
+            /* @consultamedia color de fondo,  mayor a 500px es beige,*/
+            /* y si es menor de 499 cambia a verde*/
+
+            @media (min-width: 500px) {
+                body {
+                  background-color: #f9fbd0;
+               }
+            }
+
+            @media (max-width: 499px) {
+                body {
+                  background-color: #bfff00;
+              }
+            }
+          /* atribulto de la imagen con el nombre flower */
+          [title~=flower] {
+            border: 25px solid yellow;
+            }
+          }
+
+          /*selector ID firstname */
+            #firstname {
+                background-color: #d7c0a7;
+                font-size: 20px;
+                text-align: center;
+                }
+         /* Selector de clase class center */
+            .center {
+                text-align: center;
+                color: red;
+                }
+
+        </style>
+
+        <nav>
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" href="Home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="Habilidades.html">Habilidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="Proyectos.html">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="Galeria.html">Galeria</a>
+            </li>
+          </ul>
+            <form action="https://www.google.com/" method="get">
+              <input name"q" type=" search" placeholder="Search">
+              <input type="submit" value ="Search CS50"/>
+            </form>
+
+
+        </nav>
+      </header>
+
+    </head>
+
+    <body>
+
+      <!-- Contenido Pagina Imagen y Texto -->
+      <h3 class="center"> Gracias un beso grande por todo lo que haces</h3>
+        <center>
+          <img src="imagen1.jpg" title="emoticon">
+          <img src="flower girasol.jpg"  title="flower girasol" width="320" height="250">
+          <img class="foto3" alt="codigo" title="binario" src="codigobinario.jpg" width=200px height=200px>
+        </center>
+
+        <!--ID SELECTOR -->
+      <div class="intro">
+        <p id="firstname"><br><br>David J. Malan.<br><br><br></p>
+        <p>Kisses</p>
+      </div>
+
+      <div>
+        <h4>My name is Lilia Villa</h4>
+          <p class="center">I live in Monteria, Cordoba, Colombia.</p>
+      </div>
+
+
+
+
+    </body>
+
+</html>

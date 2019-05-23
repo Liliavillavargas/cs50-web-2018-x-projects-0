@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!--Specify the character encoding for the HTML document-->
+       <meta charset="UTF-8">
+      <!-- Nombre Website, definicion estilos -->
+       <title>Website Lilia Villa</title>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <header>
+            <h1><br><br>Lilia del Carmen Villa Vargas<br><br><br><br></h1>
+            <link rel="stylesheet" href="estylo.css">
+            <link rel="stylesheet" href="caja.css">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <style>
+        /* selector primera linea de la lista ordenada Habilidades y Destrezas */
+          ol::first-line {
+            background-color: white;
+          }
+          /* selector primera letra de la lista ordenada Habilidades y Destrezas */
+          ol::first-letter {
+            background-color: pink;
+            color: red;
+            float: left;
+            font-family: monospace;
+            font-size: 100%;
+          }
+          /* @consultamedia color de fondo,  mayor a 500px es beige,*/
+          /* y si es menor de 499 cambia a verde*/
+
+          @media (min-width: 500px) {
+              body {
+                background-color: #f9fbd0;
+             }
+          }
+
+          @media (max-width: 499px) {
+              body {
+                background-color: #bfff00;
+            }
+          }
+          /* consulta en pantallas mas pequeñas para organizar los gird o columnas*/
+
+          .grid-container {
+              display: grid;
+              grid-column-gap: 20px;
+              grid-row-gap :20px;
+              grid-template-columns: auto auto auto;
+              background-color: #2196F3;
+              padding: 10px;
+          }
+
+          .grid-item {
+              background-color: white;
+              border: 1px solid rgba(0, 0, 0, 0.8);
+              padding: 10px;
+              font-size: 13px;
+              text-align: center;
+            }
+
+        </style>
+
+        <!--Navegacion del sitio, definicion estilos -->
+
+          <nav>
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" href="Home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="Habilidades.html">Habilidades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="Proyectos.html">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="Galeria.html">Galeria</a>
+              </li>
+            </ul>
+              <form action="https://www.google.com/" method="get">
+                <input name"q" type=" search" placeholder="Search">
+                <input type="submit" value ="Search CS50"/>
+              </form>
+
+
+          </nav>
+        </header>
+
+  </head>
+
+  <body>
+
+
+      <!-- Lista Ordenada -->
+      <h2>HABILIDADES Y DESTREZAS</h2>
+
+      <ol>
+        <li>Desarrollo de Software.</li>
+        <li>Administración de Bases de Datos.</li>
+        <li>Software Administrativo</li>
+        <li>Transmisiones de Movimientos.</li>
+        <li>Creación y Manejo de Plan de Cuentas. Facturación.</li>
+        <li>MS_DOS, Linux. Maquinas Virtuales,Github and Git</li>
+        <li>Creatividad Morfológica.</li>
+        <li>Cálculos Matemáticos - Financieros.</li>
+      </ol>
+
+      <!-- componente de columnas o contenedores -->
+      <div class="grid-container">
+
+        <div class="grid-item">Php, Oracle,Sql</div>
+        <div class="grid-item">HTML,CSS,SCSS,Linux</div>
+        <div class="grid-item">Redes Informaticas</div>
+        <div class="grid-item">Contabilidad Especiales</div>
+        <div class="grid-item">Maquinas Virtuales</div>
+        <div class="grid-item">Scratch,MS-DOS,C++</div>
+        <div class="grid-item">Phyton,JavaScript,Git</div>
+
+      </div>
+
+      <!--componente alerta -->
+      <div class="alert alert-primary" role="alert">
+        Well Done !!! <a href="#" class="alert-link">Come Back</a>. Give it a click if you like.
+      </div>
+
+
+  </body>
+
+</html>
