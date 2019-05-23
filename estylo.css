@@ -1,0 +1,50 @@
+﻿/*selectores */
+body > header{
+background: #000080;
+color : white;
+}
+
+/* visited link */
+a:visited {
+  color: red;
+}
+
+ul.a {
+  list-style-type: circle;
+}
+
+ol{
+  margin-left: 50px;
+}
+h1,h4 {
+  text-align: center;
+  font-family: fantasy;
+  font-style: oblique;
+
+}
+h2 {
+  text-align: left;
+  font-style: normal;
+  font-weight: bold;
+  font-family: monospace;
+
+}
+
+h3 {
+  padding-left: 1em;
+  background-color:lightgray;
+  text-align: center;
+  }
+  p
+  {
+      text-align: justify;
+      word-spacing: 5px;
+      color:gray;
+      font-family: cursive;
+      font-style: italic;
+      font-size: 15px;
+      margin-left: 30px;
+      margin-right: 30px;
+      letter-spacing: 2px;
+      line-height: 1.5em;
+  }
